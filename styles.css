@@ -1,0 +1,188 @@
+/*
+=====================================================================
+Table of Contents:
+0. Importing various things
+1. General Formatting
+2. Header / Navigation Bar
+3. Home Section
+4. About Section
+5. 
+=====================================================================
+0. Importing things 
+===================================================================== */
+
+/* Importing ROBOTO font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* 
+=====================================================================
+1. General Formatting 
+===================================================================== */
+
+* {
+    /* Width attribute takes into account padding and border */
+    /* size of element == size of content */
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+}
+
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    padding-top: 0px;
+    margin: 0px;
+}
+
+/* 
+=====================================================================
+2. Header / Navigation Bar 
+===================================================================== */
+
+.main-header {
+    background-color: rgba(0, 0, 0, .4);
+    /* TODO: Find background image */
+    background-image: url("Images/");
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav {
+    font-weight: lighter;
+    border-bottom: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    padding: 2vh;
+}
+
+.nav ul li {
+    margin: 0;
+    text-align: center;
+    font-size: large;
+    min-height: 48px;
+    width: auto;
+    padding: 0 3%;
+    display: inline;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .7);
+}
+
+.nav a {
+    display: inline-block;
+    /* Removes Underline */
+    text-decoration: none; 
+    color: white;
+    /* When the colour for <a> is changed, do it gradually */
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: aquamarine;
+}
+
+.nav li a:active { background-color: transparent !important; }
+.nav li.current a { color: aquamarine; }
+
+/* Responsive rules to improve quality on different devices */
+@media screen and (max-width: 603px) {
+    .nav {
+        display: none;
+    }
+}
+
+/* 
+=====================================================================
+3. Home Section
+===================================================================== */
+
+.homeSection {
+    background-image: url("images/bike.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+
+    /* text */
+    color: #fff;
+    text-shadow: 0 0 7px rgba(0, 0, 0, .8);
+}
+
+.homeSection h1 {
+    padding-bottom: 1vh;
+    padding-top: 35vh;
+    text-align: center;
+    font: 65px/1.3em 'opensans-bold', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.homeSection h3 {
+    font: 60px;
+    font-family: 'Times New Roman';
+}
+
+@media screen and (max-width: 603px) {
+    .homeSection {
+        margin-top: -40px;
+    }
+}
+
+/* 
+=====================================================================
+4. About Section
+===================================================================== */
+
+.aboutSection {
+    background-color: rgb(48, 48, 48);
+    height: 400px;
+}
+
+.aboutSection h1 {
+    color: aquamarine;
+    font: 65px/1.3em 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 3vh;
+    text-align: center;
+    text-shadow: 0 0 4px rgba(0, 0, 0, .7);
+}
+
+.aboutSection div {
+    padding-left: 5vw;
+}
+
+.aboutSection p {
+    padding-left: 3vw;
+    width: 70vw;
+    float: left;
+    text-align: left;
+}
+
+.profile {
+    border: 3px solid aquamarine;
+    border-radius: 50%;
+    float: left;
+    height: 12rem;
+    width: 12rem;
+    margin-top: -5vh;
+}
+
+/* 
+=====================================================================
+5. Projects Section
+===================================================================== */
+
+/* use flex-wrap: wrap */
