@@ -28,6 +28,10 @@ Table of Contents:
 }
 
 html, body {
+<<<<<<< HEAD
+=======
+    scroll-behavior: smooth;
+>>>>>>> eb2089d (reactive buttons)
     text-align: center;
     margin: 0;
     padding: 0;
@@ -46,6 +50,25 @@ main {
     margin: 0px;
 }
 
+<<<<<<< HEAD
+=======
+.clickable {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.clickable:hover {
+    color: aquamarine;
+    transform: scale(1.2)
+}
+
+/* Active works when clicking on something */
+.clickable:active { 
+    transition: transform 0.05s;
+    transform: scale(1)
+}
+
+
+>>>>>>> eb2089d (reactive buttons)
 /* 
 =====================================================================
 2. Header / Navigation Bar 
@@ -54,7 +77,10 @@ main {
 .main-header {
     background-color: rgba(0, 0, 0, .4);
     /* TODO: Find background image */
+<<<<<<< HEAD
     background-image: url("Images/");
+=======
+>>>>>>> eb2089d (reactive buttons)
     background-blend-mode: multiply;
     background-size: cover;
     position: fixed;
@@ -70,11 +96,18 @@ main {
 }
 
 .nav ul li {
+<<<<<<< HEAD
     margin: 0;
     text-align: center;
     font-size: large;
     min-height: 48px;
     width: auto;
+=======
+    text-align: center;
+    font-size: large;
+    min-height: 48px;
+    /* width: auto; */
+>>>>>>> eb2089d (reactive buttons)
     padding: 0 3%;
     display: inline;
     text-shadow: 0 0 3px rgba(0, 0, 0, .7);
@@ -86,6 +119,7 @@ main {
     text-decoration: none; 
     color: white;
     /* When the colour for <a> is changed, do it gradually */
+<<<<<<< HEAD
     transition: color 0.3s;
 }
 
@@ -96,6 +130,10 @@ main {
 .nav li a:active { background-color: transparent !important; }
 .nav li.current a { color: aquamarine; }
 
+=======
+}
+
+>>>>>>> eb2089d (reactive buttons)
 /* Responsive rules to improve quality on different devices */
 @media screen and (max-width: 603px) {
     .nav {
@@ -109,6 +147,11 @@ main {
 ===================================================================== */
 
 .homeSection {
+<<<<<<< HEAD
+=======
+    width: 100%;
+    height: 100%;
+>>>>>>> eb2089d (reactive buttons)
     background-image: url("images/bike.jpg");
     background-position: center;
     background-size: cover;
@@ -116,12 +159,19 @@ main {
     text-align: center;
 
     /* text */
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: white;
+>>>>>>> eb2089d (reactive buttons)
     text-shadow: 0 0 7px rgba(0, 0, 0, .8);
 }
 
 .homeSection h1 {
+<<<<<<< HEAD
     padding-bottom: 1vh;
+=======
+>>>>>>> eb2089d (reactive buttons)
     padding-top: 35vh;
     text-align: center;
     font: 65px/1.3em 'opensans-bold', sans-serif;
@@ -131,8 +181,27 @@ main {
 .homeSection h3 {
     font: 60px;
     font-family: 'Times New Roman';
+<<<<<<< HEAD
 }
 
+=======
+    padding-top: 0.5vh;
+    margin-bottom: 2vh;
+}
+
+/* ----------- Icons ------------- */
+.homeSection ul li {
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+.homeSection .icon {
+    font-size: 35px;
+}
+
+/* ----------- Media Queries ------------- */
+
+>>>>>>> eb2089d (reactive buttons)
 @media screen and (max-width: 603px) {
     .homeSection {
         margin-top: -40px;
